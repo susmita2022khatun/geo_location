@@ -93,7 +93,7 @@ export default function App() {
     <MapContainer center={position} zoom={6} style={{height: '100%', width: '100%', position: 'relative'}}>    
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-        url = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+        url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
       />
         <Routing sourceCity={sourceCity} destinationCity={destinationCity}/>        
     </MapContainer>
