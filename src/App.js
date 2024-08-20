@@ -53,7 +53,7 @@ export default function App() {
           PaperComponent={({ children }) => (
             <Paper style={{ background: "yellow" }} elevation={10}>{children}</Paper>
           )}          
-          getOptionLabel={(option) => `${option.city}, ${option.country}`}
+          getOptionLabel={(option) => `${option.locality}, ${option.city}, ${option.country}`}
           inputRoot={{borderColor: "white"}}
           style={{ width: 300, paddingBottom: '5%' }}
           renderInput={(params) => <TextField 
@@ -76,7 +76,7 @@ export default function App() {
           PaperComponent={({ children }) => (
             <Paper style={{ background: "yellow" }} elevation={10}>{children}</Paper>
           )} 
-          getOptionLabel={(option) => `${option.city}, ${option.country}`}
+          getOptionLabel={(option) => `${option.locality}, ${option.city}, ${option.country}`}
           style={{ width: 300, paddingBottom: '5%' }}          
           renderInput={(params) => <TextField 
             {...params} 
